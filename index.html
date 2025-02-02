@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="Images\Me.jpg"></script>
+</head>
+<body>
+    <div id="header" >
+        <div class="container">
+            <nav>
+                <img src="Images\logo.jpg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi!, I'm <span>Nikhitha Chatla</span><br>From Warangal</h1>
+            </div>
+    </div>
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images\Me.jpg" alt="Me">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p> A passionate software developer with a strong foundation in full-stack development, data structures & algorithms, and artificial intelligence. Currently pursuing my undergraduate degree in Computer Science and Engineering, I am dedicated to building innovative and user-centric applications.</p>
+                        
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2022-current</span><br>CSE in BTech</li>
+                            <li><span>2020-2022</span><br>Senior Secondary Education</li>
+                            <li><span>2020</span><br>High School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Digital Payment Wallet</span><br>As part of AICTE internship</li>
+                            <li><span>Face-Recognition System</span><br>As part of Project Based Learning at Vaagdevi College of Engineering</li>
+                            <li><span>Medical ChatBot</span><br>Personal project</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Tech Stack</span><br>Languages: C, C++, DSA</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React</li>
+                            <li><span>Database Management</span><br>MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class ="projects-list">
+                <div>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h2>Digital Payment Wallet</h2>
+                    <p>Developed a feature-rich Digital Payment Wallet using the MERN stack to facilitate seamless digital transactions automate recurring payments, and encourage smart savings for users.</p>
+                    <a href="https://github.com/fallenscent22/digital-payment">View Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>Medical ChatBot</h2>
+                    <p>A Medical chatbot using Retrieval-Augmented Generation (RAG) with the LangChain framework and the BioMistral model. The chatbot is designed to provide medical information and assistance based on user Queries related to human heart.</p>
+                    <a href="https://github.com/fallenscent22/Medical-Chatbot">View Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person"></i>
+                    <h2>Face-Recognition</h2>
+                    <p>A Face Recognition System using Python and OpenCV which detects humans faces with trained Data</p>
+                    <a href="https://github.com/fallenscent22/face-recognition">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="Work-list">
+                <div class="work">
+                    <h3>Digital Payment Wallet</h3>
+                <img src="Images/Screenshot 2025-01-15 213113.png">
+                    <p>It allows users to make transactions, also includes recurring payments and smart savings.</p>
+                </div>
+                <div class="work">
+                    <h3>Face Recognition System</h3>
+                    <img src="Images/Screenshot 2024-06-21 083958.png">
+                    <p>A Face Recognition System using Python and OpenCV which detects humans faces with trained Data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nikhithachatla6@gmail.com</p>
+                    <p><i class="fa-regular fa-phone"></i>7569996012</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/nikhithachatla"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/fallenscent22"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/Nikhitha_Resume.docx" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="successMsg">Message Sent Successfully!</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nikhitha.</p>
+        </div>
+    </div>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+        function opentab(tabName){
+           for(let tablink of tabLinks){
+               tablink.classList.remove('active-link');
+           }
+              for(let tabcontent of tabContents){
+                tabcontent.classList.remove('active-tab');
+              }
+              event.currentTarget.classList.add('active-link');
+                document.getElementById(tabName).classList.add('active-tab');
+            }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLzqhA3iDWjbC7anvHscz0Rb-nb5s8lZCvBZRdX0_mMGW9JZIyh0uXQH88Vqn7zVnA/exec';
+const form = document.forms['submit-to-google-sheet'];
+const successMsg = document.getElementById("successMsg");
+
+ // Ensure the success message is hidden on page load
+ window.onload = function() {
+        successMsg.style.opacity = 0;
+    };
+    
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            successMsg.innerHTML = "Message Sent Successfully!";
+            successMsg.style.opacity = 1; // Show the message
+            setTimeout(function(){
+                successMsg.style.transition = "opacity 1s ease-out";
+                successMsg.style.opacity = 0; // Fade out the message         
+                   }, 5000);// Wait for 5 seconds before fading out
+            form.reset();
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+        });
+});
+      </script>
+</body>
+</html>
